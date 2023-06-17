@@ -106,7 +106,7 @@ function dropCap(n) {
   const dropCapRegexp = /\b\w{3,}/g;
 
 
-  return n.toLowerCase().replace(dropCapRegexp, match => match.charAt(0).toUpperCase() + match.slice(1))
+  return n.toLowerCase().replace(dropCapRegexp, match => match.charAt(0).toUpperCase() + match.slice(1));
 
 }
 
@@ -126,7 +126,7 @@ function getYearsDiff(date1, date2){
 
 
   return Math.max(yearExtractor(date1), yearExtractor(date2)) 
-  - Math.min(yearExtractor(date1), yearExtractor(date2))
+  - Math.min(yearExtractor(date1), yearExtractor(date2));
 
 }
 
@@ -153,4 +153,14 @@ function makePassword(phrase) {
 
 }
 
-console.log(makePassword("Give me liberty or give me death"))
+console.log(makePassword("Give me liberty or give me death"));
+
+//11 Return String of First Characters
+
+function makeString(s){
+
+  const firstLettersRegexp = /\b[A-Z]/gi;
+  return s.match(firstLettersRegexp).join('');
+}
+
+console.log(makeString("This Is A Test"));
