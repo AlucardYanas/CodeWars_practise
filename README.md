@@ -1,1 +1,1 @@
-# CodeWars_practise
+thi is my repository whith my CodeWars practise
